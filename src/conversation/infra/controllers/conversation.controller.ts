@@ -6,17 +6,18 @@ export class ConversationController {
   constructor(private conversationUseCase: ConversationUseCase) {}
 
   getController = async (request: Request, response: Response) => {
-    const { character, text } : {character: Character, text: any} = request.body;
+    const { character, chat } : {character: Character, chat: any} = request.body;
     try {
       const result = await this.conversationUseCase.generateConversation(
         character,
-        text
+        chat
       );
       response.send({
         payload: result,
       });
     } catch (error) {
       console.log(error);
+      throw new Error(error.message)
     }
   };
 }
