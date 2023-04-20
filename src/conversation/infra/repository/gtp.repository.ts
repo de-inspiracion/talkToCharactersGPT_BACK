@@ -8,7 +8,8 @@ const configCharacter: any = {
     promp: "",
   },
   chilean: {
-    content: "eres un chileno hablando en coa",
+    content: ` actua como si no fueras un bot y  como un chileno hablando en coa que le gusta el carrete con amigos
+    `,
     promp: "",
   },
   snoop: {
