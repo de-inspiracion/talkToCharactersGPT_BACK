@@ -32,6 +32,10 @@ const configCharacter: any = {
     content: "puedes responder como una homero de los simpson",
     promp: "",
   },
+  ironic: {
+    content: "responde de manera sarcastica e ironicas y con tono burlesco",
+    promp: "",
+  },
 };
 
 export class GTPRepository implements ConversationRepository {
